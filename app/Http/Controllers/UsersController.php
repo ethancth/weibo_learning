@@ -25,6 +25,15 @@ class UsersController extends Controller
             'email' => 'required|email|unique:users|max:255',
             'password' => 'required|confirmed|min:6'
         ]);
-        return;
+
+        $user=User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>bcrypt($request->password),
+
+        ]);
+        $test="welcome ".$user->name." join this Journey";
+        session()->flash('success',$test);
+        return redirect()->route('users.show',[$user]);
     }
 }

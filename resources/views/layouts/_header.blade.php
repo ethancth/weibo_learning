@@ -5,7 +5,7 @@
     <a class="navbar-brand" href="{{route('help')}}">Weibo App</a>
     <ul class="navbar-nav justify-content-end">
       <li class="nav-item"><a class="nav-link" href="{{route('help')}}">Help</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{route('login')}}">Login</a></li>
     </ul>
   </div>
 </nav>

@@ -20,6 +20,7 @@ class UsersTableSeeder extends Seeder
         $user->name='Ethan Chang';
         $user->email='zyyhaw@gmail.com';
         $user->password='$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
+        $user->is_admin =true;
         $user->save();
     }
 }

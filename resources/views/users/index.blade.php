@@ -10,5 +10,6 @@
       @endforeach
     </div>
     <div class="mt-3">
-  </div>
+      {!! $users->render() !!}
+    </div>
 @stop
